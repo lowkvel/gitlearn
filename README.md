@@ -8,6 +8,7 @@ git status
 
 # add file into stage/index for tracking using <add>
 git add README.md
+git add .
 
 # commit changes using <commit>
 git commit
