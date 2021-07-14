@@ -6,7 +6,7 @@ git init
 # status checking using <status>
 git status
 
-# add file into stage/index for tracking using <add>
+# stage changes (newly added or modified) for tracking using <add>
 git add README.md
 git add .
 
