@@ -26,3 +26,8 @@ git log -p                  # all log with difference between commits
 # check difference between changes
 git diff                    # view difference before <add>
 git diff HEAD               # view difference after <add>, use this command before <commit>
+
+#####
+# branching operations
+#####
+
