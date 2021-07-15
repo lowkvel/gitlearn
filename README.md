@@ -16,6 +16,7 @@ git add .                   # stage all files for tracking
 
 # commit changes using <commit>
 git commit -m "comments"    # commit with a comment
+git commit --amend          # change comments of last commit
 
 # view committed log using <log>
 git log                     # all log
