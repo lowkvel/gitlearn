@@ -31,3 +31,4 @@ git diff HEAD               # view difference after <add>, use this command befo
 # branching operations
 #####
 
+im going to add this line for testing reset and conflict fix
