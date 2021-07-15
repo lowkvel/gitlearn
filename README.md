@@ -42,3 +42,6 @@ git chechout feature-a      # switch to the branch called "feature-a" we just cr
 
 # create a new branch using <checkout> and switch to it
 git checkout -b feature-a   # create a new branch with "feature-a" as its name and switch to it
+
+im going to add this line for testing reset and conflict fix
+
