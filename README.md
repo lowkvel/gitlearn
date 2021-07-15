@@ -31,3 +31,14 @@ git diff HEAD               # view difference after <add>, use this command befo
 # branching operations
 #####
 
+# view all branches using <branch>
+git branch                  # the branch with a '*' on the left is the branch we currently working on
+
+# create a new branch using <branch> with a name after it
+git branch feature-a        # create a branch with "feature-a" as its name
+
+# switch to another branch using <checkout>
+git chechout feature-a      # switch to the branch called "feature-a" we just created above
+
+# create a new branch using <checkout> and switch to it
+git checkout -b feature-a   # create a new branch with "feature-a" as its name and switch to it
