@@ -1,5 +1,9 @@
 # gitlearn
 
+######
+# basic operations
+#####
+
 # git initialization using <init>
 git init                    # git repository initialization
 
