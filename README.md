@@ -22,6 +22,7 @@ git log                     # all log
 git log --pretty=short      # all log in a simplified format
 git log README.md           # all log for a specific file
 git log -p                  # all log with difference between commits
+git log --graph             # view log in graph mode
 
 # check difference between changes
 git diff                    # view difference before <add>
@@ -43,5 +44,18 @@ git chechout feature-a      # switch to the branch called "feature-a" we just cr
 # create a new branch using <checkout> and switch to it
 git checkout -b feature-a   # create a new branch with "feature-a" as its name and switch to it
 
-im going to add this line for testing reset and conflict fix
+# merge a branch using <merge --no-ff>
+git checkout main               # switch back to main before merging
+git merge --no-ff feature a     # merge feature-a into main
 
+#####
+# reset operation and conflict fix
+#####
+
+# reset to old version using <reset --hard> with destination hash code
+git reset --hard hash_code
+
+# view git command log using <reflog>
+git reflog
+
+# 
