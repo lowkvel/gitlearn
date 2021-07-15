@@ -46,16 +46,22 @@ git checkout -b feature-a   # create a new branch with "feature-a" as its name a
 
 # merge a branch using <merge --no-ff>
 git checkout main               # switch back to main before merging
-git merge --no-ff feature a     # merge feature-a into main
+git merge --no-ff feature-a     # merge feature-a into main
 
 #####
 # reset operation and conflict fix
 #####
 
 # reset to old version using <reset --hard> with destination hash code
-git reset --hard hash_code
+git checkout main               # switch back to main first
+git reset --hard hash_code      # reset to an old version of main
+git checkout -b fix-b           # create and switch to a newly created branch called fix-b, add something then commit it
 
 # view git command log using <reflog>
-git reflog
+git reflog                      # view all operation logs
+git checkout main               # switch back to main first
+git reset --hard hash_code      # reset to another version 
 
-# 
+# merge conflicted code
+git checkout main               # switch back to main first
+git merge --no-ff fix-b         # try to merge fix-b into main, solve confliction by editing it, then add and commit fixed changes
